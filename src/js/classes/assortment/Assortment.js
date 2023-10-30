@@ -1,6 +1,5 @@
 import View from '../util/View';
 import products from '../../data/Products';
-import NodeCreator from '../util/NodeCreator';
 import AssortmentNavigationView from './AssortmentNavigation';
 import AssortmentProductsView from './AssortmentProducts';
 

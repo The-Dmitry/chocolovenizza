@@ -12,7 +12,7 @@ body {
 }
 
 body {
-  background: url(/src/assets/image/13.jpg) 0 0/ 30%;
+  background: url(/src/assets/image/13.jpg) 0 0/ 20%;
 }
 
 .blocked {
@@ -31,6 +31,7 @@ body {
 .main-logo {
   display: grid;
   grid-template-columns: 80px 1fr;
+  gap: 7px;
 }
 
 .logo__image {
@@ -39,12 +40,12 @@ body {
   height: 100%;
 }
 
-.logo__title {
-  display: flex;
-  align-items: center;
-  font-family: 'Merienda', cursive;
-  font-size: 2rem;
-  color: bisque;
+.main-title {
+  font-family: Adigiana;
+  font-size: 6.8rem;
+  letter-spacing: 2px;
+  color: var(--primary-color);
+  text-align: center;
 }
 
 .section-title {

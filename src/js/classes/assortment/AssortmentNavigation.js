@@ -10,7 +10,6 @@ export default class AssortmentNavigationView extends View {
     };
     super(params);
     this.observer = Observer.getInstance();
-    console.log(this.observer);
     this.configureView(productsList, setProducts);
   }
 

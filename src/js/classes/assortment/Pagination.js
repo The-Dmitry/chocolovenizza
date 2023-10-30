@@ -18,13 +18,11 @@ export default class PaginationView extends View {
     const start = new NodeCreator({
       tag: 'button',
       cssClasses: ['pagination-button'],
-      // textContent: '<<',
       callback: () => setPage(-99),
     });
     const prev = new NodeCreator({
       tag: 'button',
       cssClasses: ['pagination-button'],
-      // textContent: '<',
       callback: () => setPage(-1),
     });
     const page = new NodeCreator({
@@ -35,13 +33,11 @@ export default class PaginationView extends View {
     const next = new NodeCreator({
       tag: 'button',
       cssClasses: ['pagination-button'],
-      // textContent: '>',
       callback: () => setPage(1),
     });
     const end = new NodeCreator({
       tag: 'button',
       cssClasses: ['pagination-button'],
-      // textContent: '>>',
       callback: () => setPage(99),
     });
     if (count <= 0) {

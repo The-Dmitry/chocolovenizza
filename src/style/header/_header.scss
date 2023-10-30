@@ -1,16 +1,18 @@
 .header {
   .container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 50% 1fr;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 0 10px;
   }
-  background-color: var(--primary-color);
   height: var(--header-height);
 }
 
 .navigation {
   display: flex;
   justify-content: space-around;
-  width: min(100%, 600px);
+  // width: min(100%, 600px);
 }
 
 .navigation__item {
@@ -21,5 +23,5 @@
 
 .naviagtion__link {
   font-size: 1.7rem;
-  color: antiquewhite;
+  color: var(--primary-color);
 }

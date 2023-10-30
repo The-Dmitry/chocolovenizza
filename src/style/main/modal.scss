@@ -11,7 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 80%;
 }
 
 .modal__content {
@@ -113,19 +113,38 @@
 .modal__info {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  padding: 10px;
+}
+
+.modal__title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20%;
+}
+
+.modal__filling {
+  font-size: 2rem;
+  margin-bottom: 20%;
+  li {
+    list-style: inside;
+    &:first-child {
+      font-weight: 600;
+      list-style: none;
+    }
+  }
+}
+
+.modal__weight {
+  font-size: 2rem;
+}
+.modal__size {
+  font-size: 2rem;
 }
 
 .modal__sequence {
-  order: 1;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.modal__description {
-  order: 2;
-}
-
-.modal__cost {
-  order: 3;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: -webkit-fill-available;
 }
