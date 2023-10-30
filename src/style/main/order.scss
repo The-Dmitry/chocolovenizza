@@ -15,26 +15,33 @@
 .order-contacts {
   display: flex;
   justify-content: space-evenly;
+  max-width: 1000px;
+  margin: 0 auto 40px auto;
 }
 
 .order-contact {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  flex: 1 1 0px;
+  padding: 10px;
   a {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 1.7rem;
-  }
-  a::before {
-    margin: 0 auto;
-    content: '';
-    height: 60px;
-    width: 60px;
-    background-position: 50%;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    font-size: 2rem;
+    color: black;
+    font-weight: 500;
+    transition: all linear 0.2s;
+    &::before {
+      margin: 0 auto;
+      content: '';
+      height: 60px;
+      width: 60px;
+      background-position: 50%;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+    &:hover {
+      color: var(--primary-color);
+    }
   }
 }
 
@@ -49,4 +56,20 @@
 }
 .telegram a:before {
   background-image: url(/src/assets/svg/telegram.svg);
+}
+.vk a:before {
+  background-image: url(/src/assets/svg/vk.svg);
+}
+
+.order-contack__phone {
+  font-size: 2.5rem;
+  text-align: center;
+  a {
+    color: black;
+    transition: all linear 0.2s;
+    text-decoration: underline;
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
 }
