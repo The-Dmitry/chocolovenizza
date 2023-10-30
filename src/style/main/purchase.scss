@@ -1,0 +1,44 @@
+.purchase {
+  .container {
+    background-color: #ffffff;
+    padding: 60px 0;
+  }
+}
+
+.purchase-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.payment,
+.delivery {
+  flex: 0 1 40%;
+}
+
+.delivery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  p,
+  ul {
+    font-size: 1.7rem;
+  }
+}
+
+.payment-title {
+  margin-bottom: 20px;
+}
+
+.payment-details {
+  font-size: 1.7rem;
+}
+
+.purchase-subtitle {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.delivery-types__item {
+  list-style: disc;
+  margin-left: 20px;
+}

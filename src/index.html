@@ -1,21 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Chocolovenizza</title>
   </head>
   <body>
-    <div class="parent">
-      <div class="parent_box">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-          deleniti maxime consectetur, magnam aliquid architecto doloremque id
-          enim ex velit ea ut odit ipsum quas repudiandae dolorem ab, optio
-          perferendis.
-        </p>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="main-logo header__main-logo">
+          <div class="logo__image"></div>
+          <h2 class="logo__title">ChocoLOVE'nizza</h2>
+        </a>
+        <ul class="navigation navigation__top">
+          <li class="navigation__item">
+            <a href="#" class="naviagtion__link">Сделать заказ</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="naviagtion__link">Доставка и оплата</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="naviagtion__link">Отзывы</a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </header>
+    <main class="main">
+      <section class="assortment"></section>
+      <section class="order">
+        <div class="container">
+          <h2 class="section-title">Сделать заказ можно через:</h2>
+          <ul class="order-contacts">
+            <li class="order-contact instagram">
+              <a
+                href="https://www.instagram.com/choco.love.nizza"
+                target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li class="order-contact viber">
+              <a href="viber://chat?number=375296022821">Viber</a>
+            </li>
+            <li class="order-contact whatsapp">
+              <a href="https://wa.me/375296022821">Whatsapp</a>
+            </li>
+            <li class="order-contact telegram">
+              <a href="https://t.me/chocoLovenizza" target="_blank">Telegram</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="purchase">
+        <div class="container">
+          <h2 class="section-title">Оплата и доставка</h2>
+          <div class="purchase-info">
+            <div class="payment">
+              <h3 class="payment-title purchase-subtitle">Оплата</h3>
+              <p class="payment-details">
+                Так как все позиции изготавливаются индивидуально, все заказы
+                принимаются после внесения минимальной предоплаты в размере 30%
+                от итоговой суммы. Предоплату можно внести как переводом на
+                карту посредством ЕРИП (без взимания комиссии), так и наличными.
+                Оставшаяся часть суммы оплачивается по факту получения.
+              </p>
+            </div>
+            <div class="delivery">
+              <h3 class="delivery-title purchase-subtitle">Доставка</h3>
+              <p class="delivery-city">
+                Доставка заказов по городу Гомель осуществляется ежедневно с
+                9:00 до 21:00 до подъезда / дома.<br />При оформлении заказа на
+                сумму от 60 рублей и выше, осуществляется БЕСПЛАТНАЯ ДОСТАВКА до
+                подъезда / дома.
+              </p>
+              <p class="delivery-country">
+                Доставка по Республике Беларусь осуществляется посредством РУП
+                "Белпочта" и "Европочта" (по договоренности с покупателем).
+              </p>
+              <ul class="delivery-types">
+                <li class="delivery-types__subtitle">Стоимость доставки:</li>
+                <li class="delivery-types__item">
+                  по городу Гомель (до подъезда) - 5 рублей
+                </li>
+                <li class="delivery-types__item">
+                  по Республике Беларусь - 5 рублей
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-info">
+          <a href="#" class="main-logo footer__main-logo">
+            <div class="logo__image"></div>
+            <h2 class="logo__title">ChocoLOVE'nizza</h2>
+            <!-- <p class="logo__subtitle">Натуральный шоколад</p>
+            <p class="logo__subtitle">Ручная работа</p> -->
+          </a>
+          <p>УНН645684654</p>
+          <p>Copyright © 2022 - 2023 Название компании</p>
+        </div>
+        <div class="footer-info contacts">
+          <h4 class="footer-info__title">Контакты</h4>
+          <a href="tel:+375269875533" class="contacts__phone contacts-item"
+            >+375269875533</a
+          >
+          <a
+            href="https://www.instagram.com/choco.love.nizza/"
+            target="_blank"
+            class="contacts__instagram contacts-item"
+          ></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

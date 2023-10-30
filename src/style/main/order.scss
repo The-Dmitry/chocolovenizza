@@ -1,0 +1,52 @@
+.order {
+  .container {
+    background-color: #fff;
+    padding: 60px 0px;
+  }
+}
+
+.order-info {
+  display: flex;
+  justify-content: space-around;
+  // align-items: center;
+  // height: 100%;
+}
+
+.order-contacts {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.order-contact {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  a::before {
+    margin: 0 auto;
+    content: '';
+    height: 60px;
+    width: 60px;
+    background-position: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+.instagram a:before {
+  background-image: url(/src/assets/svg/instagram.svg);
+}
+.viber a:before {
+  background-image: url(/src/assets/svg/viber.svg);
+}
+.whatsapp a:before {
+  background-image: url(/src/assets/svg/whatsapp.svg);
+}
+.telegram a:before {
+  background-image: url(/src/assets/svg/telegram.svg);
+}
