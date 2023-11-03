@@ -4,6 +4,13 @@
     height: 100%;
     background-color: #fff;
     display: flex;
+    @media (max-width: 850px) {
+      flex-direction: column;
+    }
+    @media (max-width: 850px) {
+      padding-bottom: 50px;
+      align-items: center;
+    }
   }
 }
 .about-column {
@@ -14,6 +21,15 @@
   &:first-child {
     padding-block: 18%;
     gap: 50px;
+    @media (max-width: 850px) {
+      padding-block: 2%;
+    }
+  }
+  &:last-child {
+    @media (max-width: 850px) {
+      max-width: 500px;
+      width: 100%;
+    }
   }
 }
 .about-title {
@@ -28,9 +44,6 @@
 .advantages__item {
   font-size: 2rem;
   font-style: italic;
-}
-.about-image {
-  background-color: rgb(107, 107, 107);
 }
 .about-image {
   position: relative;

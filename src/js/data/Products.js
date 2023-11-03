@@ -8,8 +8,12 @@ import easterday from './products/Easterday';
 import forDad from './products/ForDad';
 import forMom from './products/ForMom';
 import kindergartenAndSchool from './products/KindergartenAndSchool';
+import kingDates from './products/KingDates';
+import newYear from './products/NewYear';
 
 const products = [
+  kingDates,
+  newYear,
   march8,
   february14,
   february23,

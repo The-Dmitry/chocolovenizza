@@ -15,39 +15,44 @@ export default class PaginationView extends View {
 
   configureView(count, setPage = this.callback) {
     this.viewNode.removeAllChildren();
-    const start = new NodeCreator({
-      tag: 'button',
-      cssClasses: ['pagination-button'],
-      callback: () => setPage(-99),
-    });
+    // const start = new NodeCreator({
+    //   tag: 'button',
+    //   cssClasses: ['pagination-button'],
+    //   callback: () => setPage(-99),
+    // });
     const prev = new NodeCreator({
-      tag: 'button',
+      tag: 'a',
       cssClasses: ['pagination-button'],
       callback: () => setPage(-1),
     });
+    prev.getNode().href = '#assortment';
     const page = new NodeCreator({
       tag: 'p',
       cssClasses: ['pagination-page'],
-      textContent: `${count}`,
+      textContent: `${count + 1}`,
     });
     const next = new NodeCreator({
-      tag: 'button',
+      tag: 'a',
       cssClasses: ['pagination-button'],
       callback: () => setPage(1),
     });
-    const end = new NodeCreator({
-      tag: 'button',
-      cssClasses: ['pagination-button'],
-      callback: () => setPage(99),
-    });
+    next.getNode().href = '#assortment';
+    // const end = new NodeCreator({
+    //   tag: 'button',
+    //   cssClasses: ['pagination-button'],
+    //   callback: () => setPage(99),
+    // });
     if (count <= 0) {
-      start.getNode().disabled = true;
+      // start.getNode().disabled = true;
+      prev.getNode().classList.add('pagination-button_disabled');
       prev.getNode().disabled = true;
     }
     if (count >= this.max - 1) {
       next.getNode().disabled = true;
-      end.getNode().disabled = true;
+      next.getNode().classList.add('pagination-button_disabled');
+      // end.getNode().disabled = true;
     }
-    this.viewNode.addInnerNode(start, prev, page, next, end);
+    // this.viewNode.addInnerNode(start, prev, page, next, end);
+    this.viewNode.addInnerNode(prev, page, next);
   }
 }

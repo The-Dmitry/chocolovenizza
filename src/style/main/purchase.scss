@@ -8,11 +8,19 @@
 .purchase-info {
   display: flex;
   justify-content: space-around;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    padding-inline: 10px;
+    gap: 50px;
+  }
 }
 
 .payment,
 .delivery {
   flex: 0 1 40%;
+  @media (max-width: 600px) {
+    text-align: justify;
+  }
 }
 
 .delivery {

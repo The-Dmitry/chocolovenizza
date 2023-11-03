@@ -1,18 +1,21 @@
 .header {
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 50% 1fr;
-    background-color: #fff;
-    box-sizing: border-box;
-    padding: 0 10px;
-  }
-  height: var(--header-height);
+  // height: var(--header-height);
+  height: 80px;
+}
+
+.header .container {
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0 10px;
+  height: 100%;
 }
 
 .navigation {
   display: flex;
   justify-content: space-around;
-  // width: min(100%, 600px);
+  width: min(100%, 600px);
+  height: 100%;
+  margin: 0 auto;
 }
 
 .navigation__item {
@@ -22,6 +25,14 @@
 }
 
 .naviagtion__link {
-  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 2rem;
   color: var(--primary-color);
+  transition: all linear 0.3s;
+  &:hover {
+    color: black;
+  }
 }

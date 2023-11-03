@@ -2,18 +2,26 @@ html {
   font-size: 10px;
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
+  @media (max-width: 850px) {
+    font-size: 9px;
+  }
+  @media (max-width: 400px) {
+    font-size: 8px;
+  }
 }
 
 html,
 body {
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   // background-color: #dedede;
 }
 
 body {
-  background: url(/src/assets/image/13.jpg) 0 0/ 20%;
+  @media (min-width: 1399px) {
+    background: url(/src/assets/image/13.jpg) 0 0/ 15%;
+  }
 }
 
 .blocked {
@@ -29,24 +37,18 @@ body {
   margin: 0 auto;
 }
 
-.main-logo {
-  display: grid;
-  grid-template-columns: 80px 1fr;
-  gap: 7px;
-}
-
-.logo__image {
-  background: url(/src/assets/svg/logo.svg) 50% / cover no-repeat;
-  aspect-ratio: 1 / 1;
-  height: 100%;
-}
-
 .main-title {
   font-family: Adigiana;
   font-size: 6.8rem;
   letter-spacing: 2px;
   color: var(--primary-color);
   text-align: center;
+  @media (max-width: 1000px) {
+    font-size: 5.7rem;
+  }
+  @media (max-width: 330px) {
+    font-size: 4.5rem;
+  }
 }
 
 .section-title {
